@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>    
+  
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-storage.js"></script>
+<script src="Registration.js"></script>
+  <style>
+    body {
+      background-color: rgb(231, 228, 228);
+      text-align: center;
+
+    }
+
+    form {
+      border: 3px solid #d8d2d2;
+      width: 50%;
+      margin-left: 25%;
+    }
+
+    .padding {
+      padding: 16px;
+    }
+
+    input[type=text],
+    input[type=password] {
+      background-color: #fcfcfc;
+      padding: 12px 20px;
+      margin: 8px;
+      width: 35%;
+    }
+
+    .regibutton {
+      background-color: #4CAF50;
+      color: white;
+      
+    }
+
+    .regibutton:hover {
+      opacity: 0.6;
+    }
+
+    a {
+      color: dodgerblue;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <body style="background-image: url('../images/1.jpeg'); background-repeat: no-repeat;">
+    <script src="Registration.js"></script>
+    <h1>Registration</h1>
+    <form>
+      <div class="padding">
+        <label><b>Type?</b></label>
+        <br>
+        <input type="text" placeholder="Car,Truck,MotorCycle?" id="make"required>
+        <br>
+
+        <label><b>Make</b></label>
+        <br>
+        <input type="text" placeholder="Make" id="make"required>
+        <br>
+        <label><b>Model</b></label>
+        <br>
+        <input type="text" placeholder="Model " id="Model"required>
+        <br>
+        <label><b>VIN</b></label>
+        <br>
+        <input type="number" placeholder="VIN" id="VIN"required>
+        <br>
+        <label><b>Year</b></label>
+        <br>
+        <input type="number" placeholder="YYYY" min="1965" max="2021" required>
+        <br>
+        <button class="regibutton" onclick="">Register</button>
+        <p>Want to register a driver? Click <a href="driver.html">here</a></p>
+        <p><a href="login.html">Logout!</a></p>
+        
+      </div>
+
+    </form>
+
+  </body>
+
+</html>

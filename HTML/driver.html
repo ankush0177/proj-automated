@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>    
+  
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-storage.js"></script>
+<script src="Registration.js"></script>
+  <style>
+    body {
+      background-color: rgb(231, 228, 228);
+      text-align: center;
+
+    }
+
+    form {
+      border: 3px solid #d8d2d2;
+      width: 50%;
+      margin-left: 25%;
+    }
+
+    .padding {
+      padding: 16px;
+    }
+
+    input[type=text],
+    input[type=password] {
+      background-color: #fcfcfc;
+      padding: 12px 20px;
+      margin: 8px;
+      width: 35%;
+    }
+
+    .regibutton {
+      background-color: #4CAF50;
+      color: white;
+      
+    }
+
+    .regibutton:hover {
+      opacity: 0.6;
+    }
+
+    a {
+      color: dodgerblue;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <body style="background-image: url('../images/1.jpeg'); background-repeat: no-repeat;">
+    <script src="Registration.js"></script>
+    <h1>Registration</h1>
+    <form>
+      <div class="padding">
+
+        <label><b>FirstName</b></label>
+        <br>
+        <input type="text" placeholder="Enter FirstName" id="fname"required>
+        <br>
+        <label><b>LastName</b></label>
+        <br>
+        <input type="text" placeholder="Enter LastName" id="lname"required>
+        <br>
+        <label><b>Contact Number</b></label>
+        <br>
+        <input type="text" placeholder="Contact Number" id="contact"required>
+        <br>
+        <label><b>E-mail</b></label>
+        <br>
+        <input type="text" placeholder="E-mail" id="email" required>
+        <br>
+        <button class="regibutton" onclick="register()">Register</button>
+        <p>Want to register a car? Click <a href="car.html">here</a></p>
+        <br>
+        <p><a href="login.html">Logout!</a></p>
+      </div>
+
+    </form>
+
+  </body>
+
+</html>

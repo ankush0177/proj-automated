@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-storage.js"></script>
+<script src="login.js"></script>
+<!-- <script>
+  firebase.auth().onAuthStateChange(function(user)
+{
+
+if(user)
+{
+
+  window.location.href = "home.html";
+}
+});
+</script> -->
+  <style>
+    body {
+      background-color: rgb(233, 227, 227);
+      text-align: center;
+    }
+
+    form {
+      border: 3px solid #d8d2d2;
+      width: 50%;
+      margin-left: 25%;
+    }
+
+    input[type=text],
+    input[type=password] {
+      width: 35%;
+      padding: 12px 20px;
+      margin: 8px;
+      border: 1px solid rgb(175, 172, 172);
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px;
+      width: 15%;
+    }
+
+    button:hover {
+      opacity: 0.6;
+    }
+
+    .padding {
+      padding: 16px;
+    }
+    images\1.jpeg
+    span.password {
+      float: right;
+      padding-top: 16px;
+    }
+  </style>
+</head>
+
+<body style="background-image: url('../images/1.jpeg'); background-repeat: no-repeat;">
+  
+
+  <h2>Login </h2>
+
+  <form>
+    <div class="padding">
+
+      <label><b>ID</b></label><br>
+      <input type="text" placeholder="ID" id="ID" required/>
+    
+      <br>
+      <label><b>Password</b></label><br>
+      <input type="text" placeholder="password" id="password" required />
+      
+      <br>
+      <p> <a href="1st.html">Login</a></p>
+      <br>
+      
+    </div>
+  </form>
+
+</body>
+
+</html>
