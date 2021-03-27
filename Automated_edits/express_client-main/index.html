@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="scripts.js"></script>
+	<style>
+		body{
+		background-image: url('bg.jpg');
+		height: fit-content;
+		font-size: large;
+		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+		font-feature-settings: "aalt";
+		font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+		color: whitesmoke;
+	}
+	h1{
+		font-style: italic;
+		color:yellow;
+	}
+	</style>
+</head>
+<body>
+	
+	<h1>Car Portal !</h1>
+	
+	
+	<hr>
+	<!-- Get All Cars -->
+	<p>
+		<button id='btn-get-car'>Get All Cars</button>
+	</p>
+	<hr>
+	
+	<p>
+		<label>Car VIN search</label>
+		<input type="text" id="car-vin">
+		<button id='vin'>Get Car By VIN</button>
+	</p>
+	<hr>
+	<!-- Create a car -->
+	<p>
+		
+		<label>Type</label>
+		<input type="text" id="type" name="type" required><br>
+		<label>Make</label>
+		<input type="text" id="make" name="make" required><br>
+		<label>Model</label>
+		<input type="text" id="model" name="model"><br>
+		<label>VIN</label>
+		<input type="number" id="vin1" name="vin1"><br>
+		<label>Year</label>
+		<input type="number" id="year" name="year" required><br>
+		<button id='create-car'>Register Car</button><br>
+		
+	</p>
+	<p>
+		
+		<label>Name</label>
+		<input type="text" id="name" name="name" required><br>
+		<label>Email</label>
+		<input type="text" id="email" name="email" required><br>
+		<label>License Number</label>
+		<input type="text" id="license" name="license" required><br>
+		<label>Expiration Year</label>
+		<input type="number" id="expiration" name="expiration" required><br>
+		<button id='create-driver'>Register Driver</button><br>
+		
+	</p>
+
+	<hr>
+	
+	<p>
+		<label>Car</label>
+		<input type="text" id="inp_del">
+		<button id='del_vin'>Delete By VIN</button><br>
+	</p>
+	<hr>
+	
+
+</body>
+</html>
